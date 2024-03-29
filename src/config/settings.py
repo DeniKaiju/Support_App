@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = (
-    "django-insecure-boba2dnu(krrm3q(!eyvbl&_-*mjojx#7k)a+sk+nynk+=%exd"
+    "django-insecure-boba2dnu(krrm3q(!eyvbl&_-*mjojx#7k)a+sk+nynk+=%exd"  # noqa
 )
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -96,15 +96,15 @@ AUTH_PASSWORD_VALIDATORS = [
     },
     {
         "NAME": "django.contrib.auth.password_validation."
-        "MinimumLengthValidator",
+        "MinimumLengthValidator",  # noqa
     },
     {
         "NAME": "django.contrib.auth.password_validation."
-        "CommonPasswordValidator",
+        "CommonPasswordValidator",  # noqa
     },
     {
         "NAME": "django.contrib.auth.password_validation."
-        "NumericPasswordValidator",
+        "NumericPasswordValidator",  # noqa
     },
 ]
 
