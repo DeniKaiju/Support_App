@@ -6,5 +6,5 @@ class User(models.Model):
     password = models.CharField(max_length=100)
     first_name = models.CharField(max_length=30)
     second_name = models.CharField(max_length=30)
-    avatar = models.CharField(max_length=255)  # Предполагается, что ссылка на аватар будет длинной строкой
-    level = models.IntegerField(default=1)  # По умолчанию уровень пользователя - 1
+    avatar = models.CharField(max_length=255)
+    level = models.IntegerField(default=1)
