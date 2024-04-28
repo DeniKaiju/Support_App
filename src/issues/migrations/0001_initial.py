@@ -63,13 +63,13 @@ class Migration(migrations.Migration):
                 (
                     "issue",
                     models.ForeignKey(
-                        on_delete=django.db.models.deletion.CASCADE, to="issues.issue"
+                        on_delete=django.db.models.deletion.CASCADE, to="issues.issue" # noqa
                     ),
                 ),
                 (
                     "user",
                     models.ForeignKey(
-                        on_delete=django.db.models.deletion.CASCADE, to="users.user"
+                        on_delete=django.db.models.deletion.CASCADE, to="users.user" # noqa
                     ),
                 ),
             ],
