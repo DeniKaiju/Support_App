@@ -88,15 +88,15 @@ AUTH_PASSWORD_VALIDATORS = [
     },
     {
         "NAME": "django.contrib.auth.password_validation."
-        "MinimumLengthValidator",
+        "MinimumLengthValidator",  # noqa
     },
     {
         "NAME": "django.contrib.auth.password_validation."
-        "CommonPasswordValidator",
+        "CommonPasswordValidator",  # noqa
     },
     {
         "NAME": "django.contrib.auth.password_validation."
-        "NumericPasswordValidator",
+        "NumericPasswordValidator",  # noqa
     },
 ]
 
