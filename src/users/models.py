@@ -1,4 +1,4 @@
-from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, Group, Permission
+from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, Group, Permission # noqa
 from django.utils import timezone
 from django.db import models
 
@@ -7,7 +7,7 @@ from .managers import UserManager
 class User(AbstractBaseUser, PermissionsMixin):
     email = models.CharField(
         max_length=30, 
-        unique=True, 
+        unique=True,
         default="example@example.com"
         )
     first_name = models.CharField(max_length=30)
