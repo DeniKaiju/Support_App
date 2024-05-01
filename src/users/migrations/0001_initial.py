@@ -25,7 +25,7 @@ class Migration(migrations.Migration):
                         verbose_name="ID",
                     ),
                 ),
-                ("password", models.CharField(max_length=128, verbose_name="password")),
+                ("password", models.CharField(max_length=128, verbose_name="password")), # noqa
                 (
                     "last_login",
                     models.DateTimeField(
@@ -35,7 +35,7 @@ class Migration(migrations.Migration):
                 (
                     "email",
                     models.CharField(
-                        default="example@example.com", max_length=30, unique=True
+                        default="example@example.com", max_length=30, unique=True # noqa
                     ),
                 ),
                 ("first_name", models.CharField(max_length=30)),
@@ -44,8 +44,8 @@ class Migration(migrations.Migration):
                 ("is_superuser", models.BooleanField(default=False)),
                 ("is_active", models.BooleanField(default=True)),
                 (
-                    "date_joined",
-                    models.DateTimeField(default=django.utils.timezone.now),
+                    "date_joined", # noqa
+                    models.DateTimeField(default=django.utils.timezone.now), # noqa
                 ),
                 (
                     "groups",
