@@ -5,9 +5,13 @@ from django.db import models
 from .managers import UserManager
 
 class User(AbstractBaseUser, PermissionsMixin):
-    email = models.CharField(max_length=30, unique=True, default="example@example.com")
+    email = models.CharField(
+        max_length=30, 
+        unique=True, 
+        default="example@example.com"
+        )
     first_name = models.CharField(max_length=30)
-    last_name = models.CharField(max_length=30) # noqa
+    last_name = models.CharField(max_length=30)
     is_staff = models.BooleanField(default=False)
     is_superuser = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
